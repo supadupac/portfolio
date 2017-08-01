@@ -60,6 +60,14 @@ body, html {
   margin-top: 16px;
 }
 
+.h3-right {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  color: #3f423e;
+  margin-top: 16px;
+}
+
 a:link {
   color: #F5FFF1 !important;
 }
@@ -74,4 +82,37 @@ a:hover {
 
 a:active {
     color: #F5FFF1 !important;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
