@@ -42,15 +42,36 @@ body, html {
   text-align: center;
 }
 
+.right-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #7a7f78;
+  font-style: italic;
+  width: 100%;
+  min-width:100%;
+}
+
+.p-right {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3f423e;
+  margin-top: 16px;
+}
+
 a:link {
-  color: #F5FFF1;
+  color: #F5FFF1 !important;
 }
 
 a:visited {
-  color: #F5FFF1;
+  color: #F5FFF1 !important;
 }
 
-
 a:hover {
+    color: #F5FFF1 !important;
+}
+
+a:active {
     color: #F5FFF1 !important;
 }
