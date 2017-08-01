@@ -16,7 +16,6 @@ body, html {
   height: 100%;
 }
 
-
 #left-bg {
   background-image: url("../images/left-content-bg.jpg");
   background-repeat: no-repeat, repeat;
@@ -42,7 +41,6 @@ body, html {
   font-weight: 700;
   color: #F5FFF1;
   text-align: center;
-  margin-top: 520px;
 }
 
 #right-content {
@@ -58,6 +56,15 @@ body, html {
   font-weight: 700;
   color: #F5FFF1;
   text-align: center;
+}
+
+.portimage {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 200px;
 }
 
 .right-header {
