@@ -1,144 +1,64 @@
-.border-red {
-  border-color: red;
-  border-style: solid;
-}
+* {
+  margin: 0;
+  padding: 0; }
 
-.border-blue {
-  border-color: blue;
-  border-style: solid;
-}
+body {
+  font-family: "Open Sans", "open-sans", sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 1.6; }
 
-body, html {
-  height: 100%;
-}
-
-.row-fluid {
-  height: 100%;
-}
-
-#left-bg {
-  background-image: url("../images/left-content-bg.jpg");
-  background-repeat: no-repeat, repeat;
-  background-position: center;
-  background-size: 500%;
-  min-height:100%;
-  animation: fadein 1s;
-  -moz-animation: fadein 1s; /* Firefox */
-  -webkit-animation: fadein 1s; /* Safari and Chrome */
-  -o-animation: fadein 1s; /* Opera */
-}
-
-#left-content {
-  animation: fadein 3s;
-  -moz-animation: fadein 3s; /* Firefox */
-  -webkit-animation: fadein 3s; /* Safari and Chrome */
-  -o-animation: fadein 3s; /* Opera */
-}
-
-#left-header {
-  font-family: 'Roboto', sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  color: #F5FFF1;
-  text-align: center;
-}
-
-#right-content {
-  animation: fadein 5s;
-  -moz-animation: fadein 5s; /* Firefox */
-  -webkit-animation: fadein 5s; /* Safari and Chrome */
-  -o-animation: fadein 5s; /* Opera */
-}
-
-.p-left {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: #F5FFF1;
-  text-align: center;
-}
-
-.portimage {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  display: block;
-  margin: 0 auto;
-  margin-top: 250px;
-}
-
-.right-header {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: #7a7f78;
-  font-style: italic;
+.container {
   width: 100%;
-  min-width:100%;
-}
+  height: 100%; }
+  .container .dot-container {
+    position: fixed;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    z-index: 2; }
+    .container .dot-container .dot-ul {
+      list-style: none; }
+      .container .dot-container .dot-ul li {
+        margin-bottom: 4px; }
+        .container .dot-container .dot-ul li a {
+          width: 7px;
+          height: 7px;
+          background: transparent;
+          border: 1px solid #ffffff;
+          border-radius: 50%;
+          display: inline-block; }
+          .container .dot-container .dot-ul li a.active {
+            background: #ffffff; }
+  .container .slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll; }
+    .container .slider .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60vw;
+      height: auto; }
+      .container .slider .content h3 {
+        font-size: 3rem;
+        font-weight: 600;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 2.5rem; }
+      .container .slider .content p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: center; }
+    .container .slider.about {
+      background: #8e44ad; }
+    .container .slider.photos {
+      background: #3498db; }
+    .container .slider.contact {
+      background: #c0392b;
+      text-align: center; }
+      .container .slider.contact .fa {
+        margin: 0 2rem; }
 
-.p-right {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: #3f423e;
-  margin-top: 16px;
-}
-
-.h3-right {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  font-weight: bolder;
-  color: #3f423e;
-  margin-top: 16px;
-}
-
-a:link {
-  color: #F5FFF1 !important;
-}
-
-a:visited {
-  color: #F5FFF1 !important;
-}
-
-a:hover {
-    color: #F5FFF1 !important;
-}
-
-a:active {
-    color: #F5FFF1 !important;
-}
-
-
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+/*# sourceMappingURL=styles.css.map */

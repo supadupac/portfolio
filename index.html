@@ -1,126 +1,90 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Christopher Lee</title>
-      <!-- person style sheet -->
-      <link rel="stylesheet" type="text/css" href="css/styles.css">
-      <!-- Bootstrap -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-      <!-- Google Fonts -->
-      <style>
-        @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
-      </style>
-      <!-- Font Awesome -->
-      <script src="https://use.fontawesome.com/4e6c7a2a2a.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles1.css" />
   </head>
+  <!-- <script>
+  var anchor;
+
+  $(document).ready(function() {
+    $("a").on("click", function(e) {
+      e.preventDefault();
+      anchor = $(this).attr("href");
+      console.log($(anchor));
+      console.log(anchor);
+      $(".dot-ul a").removeClass("active");
+      $(this).addClass("active");
+      console.log('hello');
+      $("html, body").animate(
+        {
+          scrollTop: $(anchor).offset().top
+        },
+        1000
+      );
+    });
+
+    // init controller
+    var controller = new ScrollMagic.Controller({
+      globalSceneOptions: { duration: "100%" }
+    });
+
+    // build scenes
+    new ScrollMagic.Scene({ triggerElement: "#about" })
+      .setClassToggle("#first", "active") // add class toggle
+      //.addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+    new ScrollMagic.Scene({ triggerElement: "#photos" })
+      .setClassToggle("#second", "active") // add class toggle
+      //.addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+    new ScrollMagic.Scene({ triggerElement: "#contact" })
+      .setClassToggle("#third", "active") // add class toggle
+      //.addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+  });
+
+  </script> -->
   <body>
-
-    <div class="row-fluid">
-      <!-- left -->
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" id="left-bg">
-        <div id="left-content">
-          <img class="portimage" src="images/port-image.jpg" alt"Christopher Lee" />
-          <h1 id="left-header">
-            Hello, I'm Christopher Lee,
-          </h1>
-          <p class="p-left">A <span style="color:#87fd65;">Desktop Support</span> and <span style="color:#87fd65;">Front-end developer</span>
-          <br/>working in <span style="color:#87fd65;">Minneapolis</span> at the University of Minnesota
-        </p>
-          <p class="p-left">
-            <br /><a href="mailto:leechristopher42@gmail.com"><button type="button" class="btn btn-primary">CONTACT ME</button></a><br/><br/>
-            <a href="http://www.facebook.com/supadupac" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a>
-            <a href="http://www.linkedin.com/in/christopher-lee-19818252" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
-            <a href="http://www.twitter.com/supadupac" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i></a>
-            <a href="http://www.google.com" target="_blank"><i class="fa fa-github-square fa-lg" aria-hidden="true"></i></a>
-          </p>
-        </div>
+    <main class="container">
+     <div class="dot-container">
+      <ul class="dot-ul">
+       <li>
+        <a href="#about" id="first"></a>
+       </li>
+       <li>
+        <a href="#photos" id="second"></a>
+       </li>
+       <li>
+        <a href="#contact" id="third"></a>
+       </li>
+      </ul>
+     </div>
+     <section id="about" class="slider about">
+      <div class="content">
+       <h3>About</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sapiente quis ducimus eius fugiat soluta velit, assumenda explicabo dolore omnis tempore aspernatur iste, laudantium ipsa, reiciendis ut at eos sequi?</p>
       </div>
-
-      <!-- right -->
-      <div id="right-content">
-      <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12">
-        <h1 class="right-header">
-          Who?
-        </h1>
+     </section>
+     <section id="photos" class="slider photos">
+      <div class="content">
+       <h3>Photos</h3>
+       <img src="https://source.unsplash.com/category/nature/330x200" alt="">
+       <img src="https://source.unsplash.com/category/food/330x200" alt="">
+       <img src="https://source.unsplash.com/category/buildings/330x200" alt="">
       </div>
-        <div class="col-lg-5 col-md-10 col-sm-12 col-xs-12">
-          <p class="p-right">My name is Christopher Lee. I am a <span class="h3-right"><b>Desktop Support</b></span> technician at the University of Minnesota. I live in St. Paul, Minnesota and I am always seeking growth in every field I can.
-
-          <br /><br />I spend most my time learning to become a <span class="h3-right"><b>MEAN</b></span> (Mongo DB-Express-Angular.js-Node.js) <span class="h3-right"><b>stack developer</b></span>. I do this along with sharpening my skills in a few languages that I am in fluent in such as <span class="h3-right"><b>HTML5</b></span>, <span class="h3-right"><b>CSS</b></span>, <span class="h3-right"><b>Javascript</b></span> and <span class="h3-right"><b>JQuery</b></span>. I also have experience with <span class="h3-right"><b>Sketch App</b></span>, <span class="h3-right"><b>Github</b></span>, <span class="h3-right"><b>Bootstrap 4</b></span>, <span class="h3-right"><b>Wordpress</b></span> and <span class="h3-right"><b>Drupal</b></span>.
-          <br />
-          </p>
+     </section>
+     <section id="contact" class="slider contact">
+      <div class="content">
+       <h3>Social Media</h3>
+       <i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i>
+       <i class="fa fa-twitter fa-5x" aria-hidden="true"></i>
+       <i class="fa fa-github fa-5x" aria-hidden="true"></i>
       </div>
-
-      <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12">
-        <h1 class="right-header">
-          Certifications
-        </h1>
-      </div>
-        <div class="col-lg-5 col-md-10 col-sm-12 col-xs-12">
-        <p class="p-right">
-          <span class="h3-right"><b>ITIL Foundations Certified</b><br />
-          <b>JAMF Certified Casper Technician</b><br />
-          <b>Lynda certificates in CSS, HTML5, PHP, MySQL, Bootstrap 4, Javascript and JQuery</b></span>
-        </p>
-      </div>
-
-      <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12">
-        <h1 class="right-header">
-          Education
-        </h1>
-      </div>
-        <div class="col-lg-5 col-md-10 col-sm-12 col-xs-12">
-        <p class="p-right">
-          <span class="h3-right"><b>University of Minnesota - Twin Cities</b></span><br />
-          Studying in Human Resource Development<br/>
-        </p>
-      </div>
-
-      <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12">
-        <h1 class="right-header">
-          History
-        </h1>
-      </div>
-        <div class="col-lg-5 col-md-10 col-sm-12 col-xs-12">
-        <p class="p-right">
-          <span class="h3-right"><b>Desktop Support / Junior Web Developer</b></span><br/>
-          <b>University of Minnesota - Twin Cities</b><br />
-          December 2013 - Present
-          <ul>
-            <li>Supporting University of Minnesota campus staff, students, and faculty end users with
-            resolutions to incidents involving PCs & Notebooks, Apple devices, mobile devices, software troubleshooting, network troubleshooting and printer troubleshooting.</li>
-            <li>Repair, image and deploy workstations using management and processing tools</li>
-            <li>Order, inventory, track, and implement new technology and software for staff and faculty.</li>
-            <li>Use Active Directory to manage computers, policies, users and groups</li>
-            <li>Provide excellent communication and customer service skills to end-users and colleagues over ServiceNow, e-mails, phone calls and face-to-face encounters</li>
-            <li>Help design and implement a hardware purchasing store website using HTML, CSS, PHP, Apache and MySQL. </li>
-            <li>Help train and educate new employees in technology, processes, policies, and customer service.</li>
-            <li>Database management of University of Minnesota hardware purchasing site.</li>
-          </ul>
-
-          <!-- <span class="h3-right"><b>ITAD Technician</b></span><br/>
-          Asset Recovery Corp / Arrow Electronics - Twin Cities<br />
-          March 2007 - December 2013
-          <ul>
-            <li>Refurbished, configured and trouble shooting a large variety of technology based electronics. This includes desktops, laptops, servers, network switches, printers, health care medical devices, fans and motors, televisions, entertainment systems, projectors and monitors.</li>
-            <li>Implemented a DHCP Server with FOG, Blanco and Deploy Studios to sanitize and image machines.</li>
-            <li>Solved end-user incidents and problems with devices we sold over e-mail and phone.</li>
-            <li>Documented procedures, guidelines and policies for other technicians joining the team.</li>
-            <li>Used a ticketing
-          </ul> -->
-
-        </p>
-      </div>
-    </div>
-
-
-
-    </div>
-
-    <!-- Jquery needed for Bootstrap -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
