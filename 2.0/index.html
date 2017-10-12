@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles1.css" />
+  </head>
+  <!-- <script>
+  var anchor;
+
+  $(document).ready(function() {
+    $("a").on("click", function(e) {
+      e.preventDefault();
+      anchor = $(this).attr("href");
+      console.log($(anchor));
+      console.log(anchor);
+      $(".dot-ul a").removeClass("active");
+      $(this).addClass("active");
+      console.log('hello');
+      $("html, body").animate(
+        {
+          scrollTop: $(anchor).offset().top
+        },
+        1000
+      );
+    });
+
+    // init controller
+    var controller = new ScrollMagic.Controller({
+      globalSceneOptions: { duration: "100%" }
+    });
+
+    // build scenes
+    new ScrollMagic.Scene({ triggerElement: "#about" })
+      .setClassToggle("#first", "active") // add class toggle
+      //.addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+    new ScrollMagic.Scene({ triggerElement: "#photos" })
+      .setClassToggle("#second", "active") // add class toggle
+      //.addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+    new ScrollMagic.Scene({ triggerElement: "#contact" })
+      .setClassToggle("#third", "active") // add class toggle
+      //.addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+  });
+
+  </script> -->
+  <body>
+    <main class="container">
+     <div class="dot-container">
+      <ul class="dot-ul">
+       <li>
+        <a href="#about" id="first"></a>
+       </li>
+       <li>
+        <a href="#photos" id="second"></a>
+       </li>
+       <li>
+        <a href="#contact" id="third"></a>
+       </li>
+      </ul>
+     </div>
+     <section id="about" class="slider about">
+      <div class="content">
+       <h3>About</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sapiente quis ducimus eius fugiat soluta velit, assumenda explicabo dolore omnis tempore aspernatur iste, laudantium ipsa, reiciendis ut at eos sequi?</p>
+      </div>
+     </section>
+     <section id="photos" class="slider photos">
+      <div class="content">
+       <h3>Photos</h3>
+       <img src="https://source.unsplash.com/category/nature/330x200" alt="">
+       <img src="https://source.unsplash.com/category/food/330x200" alt="">
+       <img src="https://source.unsplash.com/category/buildings/330x200" alt="">
+      </div>
+     </section>
+     <section id="contact" class="slider contact">
+      <div class="content">
+       <h3>Social Media</h3>
+       <i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i>
+       <i class="fa fa-twitter fa-5x" aria-hidden="true"></i>
+       <i class="fa fa-github fa-5x" aria-hidden="true"></i>
+      </div>
+     </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
